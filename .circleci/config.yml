@@ -8,7 +8,7 @@ jobs:  # basic units of work in a run
           MIX_ENV: test
       - image: circleci/mysql:latest  # database image
         environment:  # environment variables for database
-          MYSQL_ROOT_PASSWORD: t
+          MYSQL_ROOT_PASSWORD: 7TkQj5prS8
 
     working_directory: ~/app  # directory where steps will run
 
