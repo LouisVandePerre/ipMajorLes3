@@ -47,10 +47,10 @@ jobs:  # basic units of work in a run
 
       - run:  # special utility that stalls main process until DB is ready
           name: Wait for DB
-          command: dockerize -wait tcp://localhost:3306 -timeout 1m
+          command: dockerize -wait tcp://remotemysql.com:3306 -timeout 1m
 
       - run: mix test  # run all tests in project
 
       - store_test_results:  # upload junit test results for display in Test Summary
           # Read more: https://circleci.com/docs/2.0/collect-test-data/
-          path: _build/test/lib/REPLACE_WITH_YOUR_APP_NAME # Replace with the name of your :app
+          path: _build/test/lib/testdb # Replace with the name of your :app

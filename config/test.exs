@@ -2,10 +2,10 @@ use Mix.Config
 
 # Configure your database
 config :testdb, Testdb.Repo,
-  username: "root",
-  password: "",
-  database: "testdb_test",
-  hostname: "localhost",
+  username: "3eKBrCcGdc",
+  password: "7TkQj5prS8",
+  database: "3eKBrCcGdc",
+  hostname: "remotemysql.com",
   pool: Ecto.Adapters.SQL.Sandbox
 
 # We don't run a server during test. If one is required,

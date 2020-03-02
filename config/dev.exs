@@ -2,10 +2,10 @@ use Mix.Config
 
 # Configure your database
 config :testdb, Testdb.Repo,
-  username: "root",
-  password: "",
-  database: "testdb_dev",
-  hostname: "localhost",
+  username: "3eKBrCcGdc",
+  password: "7TkQj5prS8",
+  database: "3eKBrCcGdc",
+  hostname: "remotemysql.com",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
